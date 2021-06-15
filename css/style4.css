@@ -467,6 +467,8 @@ body{
   			height: 40px;
 		}
 		.details {margin-top: 0%; padding-left: 2%;}
+	
+		.details p2{font-size: 12px;}
 
 		#more p1 {display: none;}
 		
