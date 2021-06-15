@@ -435,6 +435,7 @@ body{
 		
 		.sidebar{
 			background: #434343;
+		}
 }
 		
 /* 화면 너비 0 ~ 480px */
@@ -461,7 +462,7 @@ body{
   			height: 40px;
 		}
 		.details {margin-top: 0%; padding-left: 2%;}
-}
+
 		#more p1 {display: none;}
 		
 		#more img { position: absolute; left: 35%; top: 25%;}
@@ -469,7 +470,7 @@ body{
 		.sidebar{
 			background: #434343;
 }
-
+		}
 
 
 
