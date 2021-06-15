@@ -368,6 +368,22 @@ body{
 		#contents .article_box4 {width: 20%;}
 		#contents .article_box5 {width: 20%;}
 		#contents .article_box6 {width: 10%;}
+		
+		#more p1{
+			position: absolute;
+			top: 7%;
+		}
+		
+		.up img {
+			position: absolute;
+			height:540px;
+			top: 10%;
+			left: 15%;
+		}
+		
+		.details{
+			top: 10%;
+		}
 }
 
 /* 화면 너비 0 ~ 1240px */
