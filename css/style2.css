@@ -361,7 +361,7 @@ body{
 /*반응형*/
 /* 화면 너비 0 ~ 1600px */
 	@media (max-width: 1600px){
-		#contents {width: 100%;}
+		#contents {width: 100%; height: 100vh;}
 		#contents .article_box1 {width: 10%;}
 		#contents .article_box2 {width: 20%;}
 		#contents .article_box3 {width: 20%;}
@@ -371,13 +371,13 @@ body{
 		
 		#more p1{
 			position: absolute;
-			top: 7%;
+			top: 13%;
 		}
 		
 		.up img {
 			position: absolute;
 			height:540px;
-			top: 10%;
+			top: 16%;
 			left: 15%;
 		}
 		
