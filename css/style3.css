@@ -394,28 +394,26 @@ body{
 		#box {
 			margin: 0%;
 			padding-top: 3%;
-			padding-left: 10%;
+			padding-left: 14%;
+			padding-right: 10%;
 		}
-		
+	
 		.jemok {display: none;}
 		
-		.details {margin-top: 0%; padding-left: 2%; position: absolute; top: 26%;}
-		.details p2 {font-size: 12px;}
-		
-		.navigation .vl2 {display: none;}
-		.navigation h3 {display: none;}
-		.navigation h4 {display: none;}
-		
-		.details p3{
-			display: none;
+		.vl {
+			border-left: 2px solid white;
+  			height: 40px;
 		}
-		
-		.up img { position: absolute; left: 10%;}
+		.details {margin-top: 0%; padding-left: 2%;}
 
+		#more p1 {display: none;}
+		
+		#more img { position: absolute; left: 35%; top: 25%;}
+		
 		.sidebar{
 			background: #434343;
-			}
 }
+		}
 		
 /* 화면 너비 0 ~ 480px */
 @media (max-width: 610px){
