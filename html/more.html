@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery</title>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/style6.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	
+	<style>
+        * {margin: 0; padding: 0;}
+		
+		input[id="menuicon"] {display:none;}
+		input[id="menuicon"] + label {display:block;margin:30px;width:30px;height:20px;position:absolute;cursor:pointer; right: 1%; top: 2%; z-index: 99;}
+		input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:2px;border-radius:30px;background:#fff;transition:all .35s;}
+		input[id="menuicon"] + label span:nth-child(1) {top:0;}
+		input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+		input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+		input[id="menuicon"]:checked + label {z-index:99;}
+		input[id="menuicon"]:checked + label span {background:#fff;}
+		input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+		input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+		input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+		div[class="sidebar"] {width:300px;height:100%;position:fixed;top:0;right:-300px;z-index:95;transition:all .35s; float: right;}
+		input[id="menuicon"]:checked + label + div {right:0;}
+		
+		a:link {text-decoration: none; color: #fff;}
+		a:visited {text-decoration: none; color: #fff;}
+		a:active {text-decoration: none; color: #750000;}
+		a:hover {text-decoration: none; color: #2170FF; transition:all .10s;}
+		
+	</style>
+	
+</head>
+
+<body>
+	
+	<!--로고 부분-->
+	<div class="navigation">
+		<a href="../index.html">
+		<h1><img src="../image/logo.png" alt="logo"></h1></a>
+		<div class="vl2"></div>
+		<h3>scroll</h3>
+		<h4>Europa</h4>
+		<input type="checkbox" id="menuicon">
+			<label for="menuicon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		<div class="sidebar">
+			<a href="./solarsystem.html">01. SOLAR SYSTEM</a><br><br>
+			<a href="./blackhole.html">02. BLACKHOLE</a><br><br>
+			<a href="./etc.html">03. ETC</a><br><br>
+			<a href="./more.html">04. MORE</a>
+		</div>
+	</div>
+	
+	
+  <div class="wrapper">
+    <!-- SLIDER
+    =============================== -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>001</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>Nebula.</span></h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>002</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>NGC 2313.</span></h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>003</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>Hercules A.</span></h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>004</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>Supernova.</span></h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>005</span></p>
+          </div>
+          <div class="slide-text">
+            <h4><span>Peggy.</span></h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+	
+	
+	<!--전체 큰 틀-->
+	<div id="contents">
+		<article class="article_box1"></article>
+		
+		<!--solar system 부분-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--2번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="./more.html">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+			</div>
+		</article>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- custom js -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

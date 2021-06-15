@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Blackhole</title>
+	
+	<link rel="stylesheet" href="../css/style3.css">
+	
+	<link rel="stylesheet" href="../js/fullpage.min.css">
+	<script src="../js/fullpage.min.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	
+	<style>
+        * {margin: 0; padding: 0;}
+		
+		input[id="menuicon"] {display:none;}
+		input[id="menuicon"] + label {display:block;margin:30px;width:30px;height:20px;position:absolute;cursor:pointer; right: 1%; top: 2%; z-index: 99;}
+		input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:2px;border-radius:30px;background:#fff;transition:all .35s;}
+		input[id="menuicon"] + label span:nth-child(1) {top:0;}
+		input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+		input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+		input[id="menuicon"]:checked + label {z-index:99;}
+		input[id="menuicon"]:checked + label span {background:#fff;}
+		input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+		input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+		input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+		div[class="sidebar"] {width:300px;height:100%;position:fixed;top:0;right:-300px;z-index:1;transition:all .35s; float: right;}
+		input[id="menuicon"]:checked + label + div {right:0;}
+		
+		a:link {text-decoration: none; color: #fff;}
+		a:visited {text-decoration: none; color: #fff;}
+		a:active {text-decoration: none; color: #750000;}
+		a:hover {text-decoration: none; color: #2170FF; transition:all .10s;}
+	</style>
+</head>
+
+<body>
+	<!--로고 부분-->
+	<div class="navigation">
+		<a href="../index.html">
+		<h1><img src="../image/logo.png" alt="logo"></h1></a>
+		<div class="vl2"></div>
+		<h3>scroll</h3>
+		<h4>Europa</h4>
+		<input type="checkbox" id="menuicon">
+			<label for="menuicon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		<div class="sidebar">
+			<a href="./solarsystem.html">01. SOLAR SYSTEM</a><br><br>
+			<a href="./blackhole.html">02. BLACKHOLE</a><br><br>
+			<a href="./etc.html">03. ETC</a><br><br>
+			<a href="./more.html">04. MORE</a>
+		</div>
+	</div>
+	<!--전체 큰 틀-->
+	<div id="full-page">
+		
+		<!--11111111111111111111111111111111111111111111-->
+		<div class="section s0">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/05_1.png" alt="01_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok"><span>01.</span> SOLAR SYSTEM</p></a><br>>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="">
+				<p class="jemok1"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>웜홀</p><br>
+					<p2>
+					<br>블랙홀과 화이트홀을 연결하는 우주의 시간과 공간의 벽에 구멍
+				<br><br>블랙홀이 회전할 때 만들어진다고 한다
+					<br>수학적으로만 웜홀을 통한 여행이 가능
+				<br><br>화이트홀 : 블랙홀과 반대로 뱉어내기만 하는 상태
+					<br>웜홀과 화이트홀 둘 다 이론만 존재하는 상태
+				<br><br>아인슈타인 '상대성이론' - 블랙홀, 웜홀은 존재한다.
+					<br>과거 아인슈타인, 나단 로젠 / 새로운 개념의 웜홀 이론 발표
+					<br>: 아인슈타인-로젠의 다리
+				<br><br>블랙홀-웜홀-화이트홀 
+					<br>(최근엔 화이트홀보다 블랙홀이 유력한 편)
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="./more.html">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					<br>웜홀을 찾는 방법
+				<br><br><br>1) 감마선 
+				<br><br>웜홀은 아주 밝은 은하 중심에 존재
+					<br>그 중심에 존재하는 대량의 감마선을 찾는다.
+				<br><br>빨려 들어가는 물질과 나오는 물질이 충돌하며 감마선 폭발
+				<br><br>
+					<br>2) 중력
+				<br><br>강력한 중력이 블랙홀에서만 나오는게 아닌, 웜홀에서도 나올 수 있다는 가능성 존재
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>Worm Hole.</p1>
+				<img src="../image/05_wormhole.png" alt="gugu" style="max-width:28%; height:auto;"/>
+			</div>
+		</article>
+		
+		
+	</div>
+		</div>
+		
+		<!--2222222222222222222222222222222222222222222-->
+		<div class="section s1">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/06_1.png" alt="06_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="">
+				<p class="jemok1"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>퀘이사</p><br>
+					<p2>
+					<br>가시 우주에서 가장 밝은 천체 중 하나
+					<br>먼 곳에 있는 활동 은하 핵의 일종
+				<br><br>현재 우리가 관측하는 퀘이사는 과거의 모습
+					<br>(멀리 떨어진 천체일수록, 빛이 우리 눈에 도달하는데 시간이 걸림)
+				<br><br>빅뱅 우주론의 유력한 증거
+					<br>최근으로 올수록 퀘이사가 적게 발견 
+					<br>: 과거 우주와 현재 우주가 밀도 등의 면에서 달랐다는 사실
+				<br><br>우주 초기에 비해 환경이 변하자 활동성을 잃음
+					<br>더 이상 보이지 않게 되었다.
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					<br>퀘이사의 에너지원은 초대질량 블랙홀
+				<br><br>빠른 속도로 주변 먼지와 가스를 집어 삼킨다.
+					<br>(초신성 - 중성자별, 백색왜성 등)
+					<br>ULAS J1120+0641
+				<br><br>: 현재까지 발견된 퀘이사 중 가장 먼 거리에 존재
+				<br><br>태양의 20억배 질량을 가진 블랙홀이 에너지원
+				<br><br>UL.27이라는 초거대 퀘이사군도 존재
+					<br>사자자리 부근에서 발견
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>Quasar.</p1>
+				<img src="../image/06_quasar.jpg" alt="gugu" style="max-width:28%; height:auto;"/>
+			</div>
+		</article>
+		
+		
+	</div>
+		</div>
+		
+		
+		<!--33333333333333333333333333333333333333333-->
+		<div class="section s2">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/07_1.png" alt="07_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="">
+				<p class="jemok1"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>사라진 블랙홀</p><br>
+					<p2>
+					<br>지금까지 발견된 모든 은하 중 가장 밝은 중심 핵
+					<br>: 중심에 초거대 블랙홀이 있을 것이라 추측
+				<br><br>존재한다면 현재 가장 큰 블랙홀인 TON 618보다 더 클 것으로 추측
+				<br><br>하지만 관측할 수 없었음
+					<br>: 블랙홀이 사라졌을 가능성
+				<br><br>두 은하의 결합 - 에너지 폭발 - 블랙홀을 은하 중심에서 밀어냄
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>Abell 2261 BCG.</p1>
+				<img src="../image/07_abell.png" alt="gugu" style="max-width:28%; height:auto;"/>
+			</div>
+		</article>
+	</div>
+		</div>
+	</div>
+	
+	
+	<!--동글이 부분-->
+	<script>
+	new fullpage('#full-page', {
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		navigation: true,
+		navigationPosition: 'left',
+		navigationTooltips: ['웜홀','퀘이사','사라진 블랙홀']
+	});
+	</script>
+	
+</body>
+</html>

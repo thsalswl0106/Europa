@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SolarSystem</title>
+	
+	<link rel="stylesheet" href="../css/style2.css">
+	
+	<link rel="stylesheet" href="../js/fullpage.min.css">
+	<script src="../js/fullpage.min.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	
+	<style>
+        * {margin: 0; padding: 0;}
+		
+		input[id="menuicon"] {display:none;}
+		input[id="menuicon"] + label {display:block;margin:30px;width:30px;height:20px;position:absolute;cursor:pointer; right: 1%; top: 2%; z-index: 99;}
+		input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:2px;border-radius:30px;background:#fff;transition:all .35s;}
+		input[id="menuicon"] + label span:nth-child(1) {top:0;}
+		input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+		input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+		input[id="menuicon"]:checked + label {z-index:99;}
+		input[id="menuicon"]:checked + label span {background:#fff;}
+		input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+		input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+		input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+		div[class="sidebar"] {width:300px;height:100%; position:fixed;top:0;right:-300px;z-index:1;transition:all .35s; float: right;}
+		input[id="menuicon"]:checked + label + div {right:0;}
+		
+		a:link {text-decoration: none; color: #fff;}
+		a:visited {text-decoration: none; color: #fff;}
+		a:active {text-decoration: none; color: #750000;}
+		a:hover {text-decoration: none; color: #2170FF; transition:all .10s;}
+	</style>
+</head>
+
+<body>
+	
+	
+	
+	<!--로고 부분-->
+	<div class="navigation">
+		<a href="../index.html">
+		<h1><img src="../image/logo.png" alt="logo"></h1></a>
+		<div class="vl2"></div>
+		<h3>scroll</h3>
+		<h4>Europa</h4>
+		<input type="checkbox" id="menuicon">
+			<label for="menuicon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		<div class="sidebar">
+			<a href="./solarsystem.html">01. SOLAR SYSTEM</a><br><br>
+			<a href="./blackhole.html">02. BLACKHOLE</a><br><br>
+			<a href="./etc.html">03. ETC</a><br><br>
+			<a href="./more.html">04. MORE</a>
+		</div>
+	</div>
+	<!--전체 큰 틀-->
+	<div id="full-page">
+		
+		<!--11111111111111111111111111111111111111111111-->
+		<div class="section s0">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/01_1.png" alt="01_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok1"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>오르트 구름</p><br>
+					<p2>
+					<br>"태양의 쌍둥이 별"과의 연관성
+				<br><br>태양의 쌍둥이 별이 사라지면서 오르트 구름 형성
+					<br>태양계 가장 바깥쪽에 위치한 천체 집단
+				<br><br>무언가 퍼져 있는 천체들을 붙잡고 있었다 – 오르트 구름 
+					<br> : 태양의 쌍둥이 별과 태양의 공전으로 인한 중력 가능성
+				<br><br>이 가설을 발표한 연구진들은 원시 블랙홀이 태양계 
+					<br>거대 행성으로 인해 궤도 깨짐
+					<br>쌍둥이 별 이탈
+					<br>많은 양의 천체 소실, 하지만 오르트 구름 정도의 천체는 남음
+				<br><br>또한, 거대 행성이 오르트 구름에 있을 가능성도 존재 
+					<br>-> 제 9행성
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="./more.html">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					<br>거리 (태양계 기준)
+					<br>약2,000~50,000AU 
+					<br><br>외부
+					<br>약 20,000 ~ 50,000AU
+				<br><br>중심
+					<br>약 2,000 ~ 20,000AU
+				<br><br>질량 (전부 결합한 기준)
+					<br>지구 질량의 약 5배
+				<br><br>대기 성분
+					<br>물
+					<br>메탄
+					<br>에탄
+					<br>일산화탄소
+					<br>시안화수소
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>Oort Cloud.</p1>
+				<img src="../image/01_2oort.png" alt="gugu" style="max-width:30%; height:auto;"/>
+			</div>
+		</article>
+		
+		
+	</div>
+		</div>
+		
+		<!--2222222222222222222222222222222222222222222-->
+		<div class="section s1">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/02_1.png" alt="02_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok1"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>오우무아무아</p><br>
+					<p2>
+					<br>태양계 안쪽까지 들어왔다 빠르게 사라진 천체
+				<br><br>1) 우리 태양계 밖에서 온 성간 천체
+					<br>2) 길다란 시가 모양, 회전하는 형태로 이동
+					<br>3) 태양 근처에서 급격한 가속
+				<br><br>세번째 부분에서의 의문점
+					<br>: 태양 근처를 지나갈 때 느려질 것으로 예상했기 때문
+				<br><br>혜성이라고 추측 - 꼬리가 없었다
+				<br><br>명왕성과 해왕성의 위성인 트리톤과 유사점 발견
+					<br>: 질소 얼음으로 구성
+				<br><br>매우 추운 곳에서 만들어졌을 가능성
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					<br>구분
+					<br>성간 천체 / 쌍곡선 궤도 소행성 
+					<br><br>크기
+					<br>약 230 X 35 X 35m
+				<br><br>지구 접근 거리
+					<br>약 0.161AU
+					<br>속도
+					<br>초속 87Km
+				<br><br>성분
+					<br>수소 얼음 덩어리
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>Oumuamua.</p1>
+				<img src="../image/02_oumu.png" alt="gugu" style="max-width:30%; height:auto;"/>
+			</div>
+		</article>
+		
+		
+	</div>
+		</div>
+		
+		
+		<!--33333333333333333333333333333333333333333-->
+		<div class="section s2">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/03_1.png" alt="01_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok1"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>제 9행성</p><br>
+					<p2>
+					<br>태양계 바깥쪽에 있을 것으로 추정되는 거대 행성
+					<br>현재까지 미확인 행성
+				<br><br>지구의 10배 이상 크기의 행성 또는,
+					<br>자몽 크기의 원시 블랙홀일 가능성 존재 
+				<br><br>블랙홀일 경우, 감마선을 통한 방법으로 확인 가능
+				<br><br>해왕성보다 더 바깥쪽에 위치
+				<br><br>HD 106906b
+				<br><br>목성 질량 11배에 달하는 크기
+					<br>중심별 확인 불가, 규칙적인 궤도 또한 확인 불가였으나
+				<br><br>최근 중심별을 확인, 이 행성이 중심별에서 너무 멀리 떨어져 있었기 때문
+					<br>중심별인 쌍성의 중력 때문에 바깥쪽으로 튕겨 나갔을 것으로 추측
+				<br><br> 제 9행성의 궤도와 유사할 것으로 추측
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					<br>거리 (태양계 기준)
+					<br>약 1,000AU 
+					<br><br>공전 주기(태양계 기준)
+					<br>약 15,000년
+				<br><br>지름
+					<br>약 26,000 ~ 56,000Km
+					<br>질량 (지구 기준)
+					<br>약 5 ~ 10배
+				<br><br>대기 성분
+					<br>천왕성, 해왕성과 비슷한 거대 얼음 행성 추정.
+					<br>H/HE 47K
+					<br>H20 2700K
+					<br>MhSi03
+					<br>Fe 370K
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>Planet Nine.</p1>
+				<img src="../image/03_planet9.png" alt="gugu" style="max-width:28%; height:auto;"/>
+			</div>
+		</article>
+	</div>
+		</div>
+		
+		
+		<!--44444444444444444444444444444444444444444-->
+		<div class="section s3">
+	<div id="contents">
+		<article class="article_box1">
+			<img src="../image/04_1.png" alt="01_1">
+		</article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok1"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<div class="details">
+					<p>S5-HVS1</p><br>
+					<p2>
+					<br>"시속 600만km로 쫓겨난 별"
+				<br><br>24초마다 지구를 한바퀴 돌 수 있는 속도
+					<br>현재 우주에서 발견된 천체 중 가중 빠르게 이동하는 천체
+				<br><br>우리 은하계 중심부에 위치한 궁수자리 A* 
+					<br> : 초대질량 블랙홀 존재
+				<br><br>이 블랙홀에 한 쌍성 접근
+					<br>블랙홀이 쌍성 중 하나의 별을 바깥으로 날려보냄
+				<br><br>블랙홀은 다 집어 삼키는 것이 아닌가?
+					<br>: 하나의 별이라면 빨려 들어가는 것이 맞음, 하지만 쌍성이었기 때문에 블랙홀이 쌍성 중 하나를 중력으로 붙잡게 됨
+					<br>나머지 별은 궤도에서 이탈하여 빠른 속도로 튕겨져 나감
+				<br><br>-> 힐스 메커니즘
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+				<div class="details2">
+				<p2>
+					
+					</p2>
+				</div>
+			</div>
+		</article>
+		
+		<!--6번쨰-->
+		<article class="article_box6"></article>
+		
+		<!--박스들 위-->
+		<article class="up">
+			<div id="more">
+				<p1>S5-HVS1.</p1>
+				<img src="../image/04_s5hvs1.png" alt="gugu" style="max-width:28%; height:auto;"/>
+			</div>
+		</article>
+	</div>
+		</div>
+		
+		
+		
+		
+	</div>
+	
+	
+	<div class="loading">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+	</div>
+	
+	<script>
+		$(window).on('load', function() {
+			$('#loading').fadeOut(350);
+			$('#full-page').addClass('active');
+		});
+	</script>
+	
+	
+	
+	
+	
+	<!--동글이 부분-->
+	<script>
+	new fullpage('#full-page', {
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		navigation: true,
+		navigationPosition: 'left',
+		navigationTooltips: ['오르트구름','오우무아무아','제 9행성','S5-HVS1']
+	});
+	</script>
+	
+</body>
+</html>

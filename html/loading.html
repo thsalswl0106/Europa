@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>loading</title>
+	
+	<link rel="stylesheet" href="../css/style5.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<div class="loading">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+	</div>
+	
+	<script>
+		$(window).on('load', function() {
+			$('#loading').fadeOut(350);
+			$('#full-page').addClass('active');
+		});
+	</script>
+</body>
+</html>

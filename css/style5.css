@@ -1,0 +1,29 @@
+* {margin: 0; padding: 0;}
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: #2170FF;
+	z-index: 100;
+}
+
+.loading {position: absolute; z-index: 2;}
+.loading span{
+	display: inline-block; vertical-align: middle;
+	width: 10px; height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	text-indent: -999px;
+	margin: 0 1px;
+	animation: loading 1s ease infinite;
+}
+
+.loading span:nth-child(2) {animation-delay: .2s;}
+.loading span:nth-child(3) {animation-delay: .4s;}
+.loading span:nth-child(4) {animation-delay: .6s;}
+
+@keyframes loading{
+	0% {transform: translateY(0);}
+	50% {transform: translateY(10px);}
+}
