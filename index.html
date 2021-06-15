@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Europa</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	
+	<style>
+        * {margin: 0; padding: 0;}
+		
+		input[id="menuicon"] {display:none;}
+		input[id="menuicon"] + label {display:block;margin:30px;width:30px;height:20px;position:absolute;cursor:pointer; right: 1%; top: 2%; z-index: 99;}
+		input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:2px;border-radius:30px;background:#fff;transition:all .35s;}
+		input[id="menuicon"] + label span:nth-child(1) {top:0;}
+		input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+		input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+		input[id="menuicon"]:checked + label {z-index:99;}
+		input[id="menuicon"]:checked + label span {background:#fff;}
+		input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+		input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+		input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+		div[class="sidebar"] {width:300px;height:100%;position:fixed;top:0;right:-300px;z-index:1;transition:all .35s; float: right;}
+		input[id="menuicon"]:checked + label + div {right:0;}
+		
+		a:link {text-decoration: none; color: #fff;}
+		a:visited {text-decoration: none; color: #fff;}
+		a:active {text-decoration: none; color: #750000;}
+		a:hover {text-decoration: none; color: #2170FF; transition:all .10s;}
+	</style>
+</head>
+
+<body>
+	<!--로고 부분-->
+	<div class="navigation">
+		<a href="index.html">
+		<h1><img src="image/logo.png" alt="logo"></h1></a>
+		<div class="vl2"></div>
+		<h3>scroll</h3>
+		<h4>Europa</h4>
+		<input type="checkbox" id="menuicon">
+			<label for="menuicon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		<div class="sidebar">
+				<a href="./html/solarsystem.html">01. SOLAR SYSTEM</a><br><br>
+				<a href="./html/blackhole.html">02. BLACKHOLE</a><br><br>
+				<a href="./html/etc.html">03. ETC</a><br><br>
+				<a href="./html/more.html">04. MORE</a>
+		</div>
+	</div>
+	<!--전체 큰 틀-->
+	<div id="contents">
+		<article class="article_box1"></article>
+		
+		<!--solar system 부분-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./html/solarsystem.html">
+				<p class="jemok"><span>01.</span> SOLAR SYSTEM</p></a><br>
+				<br><div class="vl"></div>
+				<div class="details">
+					<p>우리 태양계에 존재하는 미스테리</p><br>
+					<p2>오우무아무아</p2><br>
+					<p2>오르트 구름</p2><br>
+					<p2>제 9행성</p2><br>
+					<p2>S5-HVS1</p2><br><br>
+					<a href="./html/solarsystem.html"><p3>See More.</p3></a>
+				</div>
+			</div>
+		</article>
+		
+		<!--2번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./html/blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+				<br><div class="vl"></div>
+				<div class="details">
+					<p>블랙홀에 관한 미스테리</p><br>
+					<p2>웜홀</p2><br>
+					<p2>퀘이사</p2><br>
+					<p2>사라진 블랙홀</p2><br><br>
+					<a href="./html/blackhole.html"><p3>See More.</p3></a>
+				</div>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./html/etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+				<br><div class="vl"></div>
+				<div class="details">
+					<p>그 외 우주에 관한 미스테리</p><br>
+					<p2>HD 139139</p2><br>
+					<p2>태비의 별: KIC 8462852</p2><br>
+					<p2>IRAS 00500+6713</p2><br>
+					<p2>므두셀라</p2><br><br>
+					<a href="./html/etc.html"><p3>See More.</p3></a>
+				</div>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="./html/more.html">
+				<p class="jemok"><span>04.</span> MORE</p></a><br>
+			</div>
+		</article>
+	</div>
+</body>
+</html>
