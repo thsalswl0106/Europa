@@ -497,6 +497,11 @@ a{
 			width: 20%;
 		}
 		
+		.sidebar{
+			background: #434343;
+				}
+}
+		
 		
 /* 화면 너비 0 ~ 480px */
 @media (max-width: 610px){
@@ -523,6 +528,10 @@ a{
   			height: 40px;
 		}
 		.details {margin-top: 5%;}
+	
+		.sidebar{
+			background: #434343;
+}
 }
 
 @media (max-width: 400px){
@@ -549,4 +558,10 @@ a{
   			height: 40px;
 		}
 		.details {margin-top: 5%;}
+	
+		.sidebar{
+			background: #434343;
 }
+}
+		
+		

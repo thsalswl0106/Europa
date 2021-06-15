@@ -410,11 +410,12 @@ body{
 			display: none;
 		}
 		
-		.sidebar{
-			background-color: #1B1B1B;
-		}
-		
 		.up img { position: absolute; left: 10%;}
+
+		.sidebar{
+			background: #434343;
+			}
+}
 		
 /* 화면 너비 0 ~ 480px */
 @media (max-width: 610px){
@@ -440,8 +441,12 @@ body{
   			height: 40px;
 		}
 		.details {margin-top: 0%; padding-left: 2%;}
-}
+
 		#more p1 {display: none;}
 		
 		#more img { position: absolute; left: 35%; top: 25%;}
-
+		
+		.sidebar{
+			background: #434343;
+}
+}

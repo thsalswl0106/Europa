@@ -391,6 +391,10 @@ body{
 			top: 5%;
 			left: 5%;
 		}
+		
+		.sidebar{
+			background: #434343;
+}
 }
 
 
@@ -407,7 +411,7 @@ body{
 		#box {
 			margin: 0%;
 			padding-top: 3%;
-			padding-left: 10%;
+			padding-left: 14%;
 		}
 		
 		.jemok {display: none;}
@@ -429,6 +433,10 @@ body{
 		
 		.up img { position: absolute; left: 10%;}
 		
+		.sidebar{
+			background: #434343;
+}
+		
 /* 화면 너비 0 ~ 480px */
 @media (max-width: 610px){
 		#contents {padding-top: 25%;}
@@ -442,7 +450,7 @@ body{
 		#box {
 			margin: 0%;
 			padding-top: 3%;
-			padding-left: 10%;
+			padding-left: 14%;
 			padding-right: 10%;
 		}
 	
@@ -457,6 +465,10 @@ body{
 		#more p1 {display: none;}
 		
 		#more img { position: absolute; left: 35%; top: 25%;}
+		
+		.sidebar{
+			background: #434343;
+}
 
 
 
