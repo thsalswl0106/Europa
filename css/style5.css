@@ -8,7 +8,7 @@ body{
 	z-index: 100;
 }
 
-.loading {position: absolute; z-index: 2;}
+.loading {position: absolute; z-index: 100;}
 .loading span{
 	display: inline-block; vertical-align: middle;
 	width: 10px; height: 10px;

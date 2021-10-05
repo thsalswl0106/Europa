@@ -378,6 +378,26 @@ body{
 		}
 }
 
+/* 화면 너비 0 ~ 1366px */
+	@media (max-width: 1366px){
+		#contents {width: 100%;}
+		#contents .article_box1 {width: 10%;}
+		#contents .article_box2 {width: 20%;}
+		#contents .article_box3 {width: 20%;}
+		#contents .article_box4 {width: 20%;}
+		#contents .article_box5 {width: 20%;}
+		#contents .article_box6 {width: 10%;}
+		
+		.details {
+			position: relative;
+			margin-top: 130%;}
+		.details2 {
+			position: relative;
+			margin-top: 150%;}
+		
+}
+
+
 /* 화면 너비 0 ~ 1240px */
 	@media (max-width: 1240px){
 		#contents {width: 100%;}
