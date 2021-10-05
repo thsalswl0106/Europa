@@ -792,6 +792,28 @@ ul {
 			text-align: center;
 			width: 20%;
 		}
+		
+				#contents .aside_1 {width: 100%; text-align: center; margin-top: 10%;}
+	figcaption p {display: none;}
+	#contents .aside_2 {width: 100%; text-align: center;}
+	#contents .aside_3 {width: 100%; text-align: center;}
+	#contents .aside_4 {width: 100%; text-align: center;}
+	#contents .section_1 {width: 100%; text-align: center;}
+	#contents .section_2 {width: 100%; text-align: center;}
+	#contents .section_3 {width: 100%; text-align: center;}
+	#contents .section_4 {width: 100%; text-align: center;}
+	#contents .footer_1 {width: 100%; text-align: center;}
+	#contents .footer_2 {width: 100%; text-align: center;}
+	#contents .footer_3 {width: 100%; text-align: center;}
+	#contents .footer_4 {width: 100%; text-align: center;}
+		
+			#contents img{
+			width: inherit; 
+			max-width: 80%; 
+			height: auto; 
+			padding-top: 20%;
+		}
+		
 }
 
 
@@ -866,7 +888,6 @@ ul {
 	#contents .footer_4 {width: 100%; text-align: center;}
 		
 			#contents img{
-			
 			width: inherit; 
 			max-width: 80%; 
 			height: auto; 
