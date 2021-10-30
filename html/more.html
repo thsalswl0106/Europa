@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery</title>
+	
+	 <link rel="stylesheet" href="../css/style6.css">
+		
+		<!--사이드 바-->
+		<style>
+        * {margin: 0; padding: 0;}
+		
+		input[id="menuicon"] {display:none;}
+		input[id="menuicon"] + label {display:block;margin:30px;width:30px;height:20px;position:absolute;cursor:pointer; right: 1%; top: 2%; z-index: 99;}
+		input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:2px;border-radius:30px;background:#fff;transition:all .35s;}
+		input[id="menuicon"] + label span:nth-child(1) {top:0;}
+		input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+		input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+		input[id="menuicon"]:checked + label {z-index:99;}
+		input[id="menuicon"]:checked + label span {background:#fff;}
+		input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+		input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+		input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+		div[class="sidebar"] {width:300px;height:100%;position:fixed;top:0;right:-300px;z-index:95;transition:all .35s; float: right;}
+		input[id="menuicon"]:checked + label + div {right:0;}
+		
+		a:link {text-decoration: none; color: #fff;}
+		a:visited {text-decoration: none; color: #fff;}
+		a:active {text-decoration: none; color: #750000;}
+		a:hover {text-decoration: none; color: #2170FF; transition:all .10s;}
+		
+	</style>
+	
+</head>
+  
+<body>
+	
+	<!--로고 부분-->
+	<div class="navigation">
+		<a href="../index.html">
+		<h1><img src="../image/logo.png" alt="logo"></h1></a>
+		<div class="vl2"></div>
+		<h3>scroll</h3>
+		<h4>Europa</h4>
+		<input type="checkbox" id="menuicon">
+			<label for="menuicon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		<div class="sidebar">
+			<a href="./solarsystem.html">01. SOLAR SYSTEM</a><br><br>
+			<a href="./blackhole.html">02. BLACKHOLE</a><br><br>
+			<a href="./etc.html">03. ETC</a><br><br>
+			<a href="./more.html">04. MORE</a>
+		</div>
+	</div>
+	
+	<!--전체 큰 틀-->
+	<div id="contents">
+		<article class="article_box1"></article>
+		
+		<!--2번째-->
+		<article class="article_box2">
+			<div id="box">
+				<a href="./solarsystem.html">
+				<p class="jemok"><span>01.</span> SOLAR SYSTEM</p></a><br>
+			</div>
+		</article>
+		
+		<!--3번쨰-->
+		<article class="article_box3">
+			<div id="box">
+				<a href="./blackhole.html">
+				<p class="jemok"><span>02.</span> BLACKHOLE</p></a><br>
+			</div>
+		</article>
+		
+		<!--4번쨰-->
+		<article class="article_box4">
+			<div id="box">
+				<a href="./etc.html">
+				<p class="jemok"><span>03.</span> ETC</p></a><br>
+			</div>
+		</article>
+		
+		<!--5번쨰-->
+		<article class="article_box5">
+			<div id="box">
+				<a href="./more.html">
+				<p class="jemok1"><span>04.</span> MORE</p></a><br>
+			</div>
+		</article>
+		
+		<!--aside 1번째-->
+		<aside class="aside_1">
+			<div id="box">
+				<img src="../image/4_1.png" alt="4_1">
+				<figcaption>
+					<h2 class="title">Nebula</h2>
+					<p class="memo">성간 물질과 수소로 이루어진 구름</p>
+				</figcaption>
+			</div>
+		</aside>
+		
+		<!--aside 2번째-->
+		<aside class="aside_2">
+			<div id="box">
+				<img src="../image/4_2.png" alt="4_2">
+				<figcaption>
+					<h2 class="title">NGC 2313</h2>
+					<p class="memo">방출 성운으로, 자신의 빛을 발산하는 가스 구름</p>
+				</figcaption>
+			</div>
+		</aside>
+		
+		<!--aside 3번째-->
+		<aside class="aside_3">
+			<div id="box">
+				<img src="../image/4_3.png" alt="4_3">
+				<figcaption>
+					<h2 class="title">Hercules A</h2>
+					<p class="memo">타원 은하 헤라클레스 A의 중심부에 있는 초거대 블랙홀의 모습</p>
+				</figcaption>
+			</div>
+		</aside>
+		
+		<!--aside 4번째-->
+		<aside class="aside_4">
+			<div id="box">
+				<img src="../image/4_4.png" alt="4_4">
+				<figcaption>
+					<h2 class="title">NGC 5307</h2>
+					<p class="memo">지구로부터 약 1억 4천만 광년 떨어진 곳에 위치, 두 은하가 합쳐지고 있으며, 각 은하에서 부분적으로 혼합된 별이 탄생하고 있다.</p>
+				</figcaption>
+			</div>
+		</aside>
+		
+		
+		
+		<!--section 1번째-->
+		<section class="section_1">
+			<div id="box">
+				<img src="../image/4_5.png" alt="4_5">
+				<figcaption>
+					<h2 class="title">Peggy</h2>
+					<p class="memo">토성의 고리에 있는 작은 달. <br>토성의 달 중 타이탄과 엔셀라두스의 탄생의 비밀을 알 수 있을 것으로 기대</p>
+				</figcaption>
+			</div>
+		</section>
+		
+		<!--section 2번째-->
+		<section class="section_2">
+			<div id="box">
+				<img src="../image/4_6.png" alt="4_6">
+				<figcaption>
+					<h2 class="title">Galactic Goulash</h2>
+					<p class="memo">지구로부터 약 1억 4천만 광년 떨어진 곳에 위치한 은하</p>
+				</figcaption>
+			</div>
+		</section>
+		
+		<!--section 3번째-->
+		<section class="section_3">
+			<div id="box">
+				<img src="../image/4_8.png" alt="4_8">
+				<figcaption>
+					<h2 class="title">Jovian Moon : Ganymede</h2>
+					<p class="memo">목성의 달인 가니메데의 10년동안의 모습</p>
+				</figcaption>
+			</div>
+		</section>
+		
+		<!--section 4번째-->
+		<section class="section_4">
+			<div id="box">
+				<img src="../image/4_7.png" alt="4_7">
+				<figcaption>
+					<h2 class="title">Bennu</h2>
+					<p class="memo">아폴로 소행성군에 속하는 소행성이자 지구접근천체</p>
+				</figcaption>
+			</div>
+		</section>
+		
+		
+		
+		<!--footer 1번째-->
+		<footer class="footer_1">
+			<div id="box">
+				<img src="../image/4_9.png" alt="4_9">
+				<figcaption>
+					<h2 class="title">Gemini</h2>
+					<p class="memo">그리스 로마 신화의 디오스쿠로이 형제에 얽힌 신화가 직접적인 모티브가 된 별자리의 별 형성 과정</p>
+				</figcaption>
+			</div>
+		</footer>
+		
+		<!--footer 2번째-->
+		<footer class="footer_2">
+			<div id="box">
+				<img src="../image/4_10.png" alt="4_10">
+				<figcaption>
+					<h2 class="title">NGC 7027</h2>
+					<p class="memo">매우 젊고 밀도 높은 행성상성운으로 지구로부터 백조자리 방향으로 약 3000 광년 떨어져 있다.</p>
+				</figcaption>
+			</div>
+		</footer>
+		
+		<!--footer 3번째-->
+		<footer class="footer_3">
+			<div id="box">
+				<img src="../image/4_11.png" alt="4_11">
+				<figcaption>
+					<h2 class="title">NGC 6523</h2>
+					<p class="memo">별이 탄생하는 거대한 가스 구름과 먼지 구름</p>
+				</figcaption>
+			</div>
+		</footer>
+	
+	</div>
+	
+</body>
+
+</html>
