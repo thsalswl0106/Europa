@@ -748,7 +748,7 @@ ul {
 
 
 /* 화면 너비 0 ~ 1600px */
-	@media (max-width: 1600px){
+	@media (max-width: 2000px){
 		#contents {width: 100%;}
 		#contents .article_box1 {width: 20%;}
 		#contents .article_box2 {width: 20%;}
@@ -756,6 +756,50 @@ ul {
 		#contents .article_box4 {width: 20%;}
 		#contents .article_box5 {width: 20%;}
 		
+		#contents .aside_1 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .aside_2 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .aside_3 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .aside_4 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .section_1 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .section_2 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .section_3 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .section_4 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .footer_1 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .footer_2 img{
+		width: 380px;
+		margin-left: -17%;
+		}
+		#contents .footer_3 img{
+		width: 380px;
+		margin-left: -17%;
+		}
 		
 }
 
@@ -769,13 +813,6 @@ ul {
 		#contents .article_box5 {width: 20%;}
 		
 		.navigation .vl2 {left: 4%;}
-		
-		#contents img{
-			width: inherit; 
-			max-width: 100%; 
-			height: auto; 
-			padding-left: 10%;
-		}
 }
 
 
