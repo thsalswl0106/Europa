@@ -192,6 +192,7 @@ ul {
 #contents .article_box4 {
 	float: left; width: 20%; height: 25vh; 
 	background-color: #ffffff;
+	background-color: #ffffff;
     background-color: rgba( 255, 255, 255, 0 );
 	border-bottom: 1px solid #212121;
 	border-right: 1px solid #212121;
@@ -688,19 +689,74 @@ ul {
 
 
 /*반응형*/
-@media (hover: hover) {
-	a:hover { color: red; text-decoration: underline; }
+@media (max-width: 2560px){
+		#contents {width: 100%;}
+		#contents .article_box1 {width: 20%;}
+		#contents .article_box2 {width: 20%;}
+		#contents .article_box3 {width: 20%;}
+		#contents .article_box4 {width: 20%;}
+		#contents .article_box5 {width: 20%;}
+		body{	
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		#contents .aside_1 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .aside_2 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .aside_3 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .aside_4 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .section_1 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .section_2 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .section_3 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .section_4 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .footer_1 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .footer_2 img{
+		width: 500px;
+		margin-left: -17%;
+		}
+		#contents .footer_3 img{
+		width: 500px;
+		margin-left: -17%;
+		}
 }
 
 
 /* 화면 너비 0 ~ 1600px */
 	@media (max-width: 1600px){
 		#contents {width: 100%;}
-		#contents .article_box1 {width: 20%; }
+		#contents .article_box1 {width: 20%;}
 		#contents .article_box2 {width: 20%;}
 		#contents .article_box3 {width: 20%;}
 		#contents .article_box4 {width: 20%;}
 		#contents .article_box5 {width: 20%;}
+		
+		
 }
 
 /* 화면 너비 0 ~ 1366px */
@@ -716,7 +772,7 @@ ul {
 		
 		#contents img{
 			width: inherit; 
-			max-width: 120%; 
+			max-width: 100%; 
 			height: auto; 
 			padding-left: 10%;
 		}
@@ -738,7 +794,6 @@ ul {
 			width: inherit; 
 			max-width: 110%; 
 			height: auto; 
-			
 		}
 }
 
@@ -982,6 +1037,7 @@ ul {
 			top: 10%;
 		}
 	.name{ font-family: 'Montserrat', sans-serif;}
+	.navigation h3{display: none;}
+	.navigation h4{display: none;}
 }
-		
 		

@@ -271,6 +271,20 @@ body{
 
 /*반응형*/
 
+@media (max-width: 2560px){
+		#contents {width: 100%;}
+		#contents .article_box1 {width: 20%;}
+		#contents .article_box2 {width: 20%;}
+		#contents .article_box3 {width: 20%;}
+		#contents .article_box4 {width: 20%;}
+		#contents .article_box5 {width: 20%;}
+		body{	
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+}
+
+
 
 /* 화면 너비 0 ~ 1600px */
 	@media (max-width: 1600px){
